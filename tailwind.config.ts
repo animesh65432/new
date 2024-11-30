@@ -91,6 +91,18 @@ export default {
 					50: 'hsla(205,100%,15%,1)',
 					75: 'hsla(205,100%,15%,1)',
 					hover: 'hsla(205,100%,15%,1)'
+				},
+				"custom-backgroud-white-color": {
+					DEFAULT: "hsla(30,100%,98%,1)",
+					50: 'hsla(30,100%,98%,1)',
+					75: 'hsla(30,100%,98%,1)',
+					hover: 'hsla(30,100%,98%,1)'
+				},
+				"custome-dark-green": {
+					DEFAULT: "hsla(168,80%,6%,1)",
+					50: 'hsla(168,80%,6%,1)',
+					75: 'hsla(168,80%,6%,1)',
+					hover: 'hsla(168,80%,6%,1)'
 				}
 			},
 			borderRadius: {

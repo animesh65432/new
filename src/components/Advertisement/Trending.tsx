@@ -1,6 +1,6 @@
 import React from 'react'
-import { Card } from "../components/ui/card"
-import { CardOfTrending } from "../helper"
+import { Card } from "../../components/ui/card"
+import { CardOfTrending } from "../../helper"
 import Image from 'next/image'
 
 const Trending: React.FC = () => {

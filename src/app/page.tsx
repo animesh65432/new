@@ -1,4 +1,4 @@
-import { Header, HeroSection, Navbar, FoodDrinkLayout, FashoinCard, Merchandise, Business, PodCast } from "../components"
+import { Header, HeroSection, Navbar, FoodDrinkLayout, Merchandise, Business, Afflicate, Sloution, Footer } from "../components"
 export default function Home() {
   return (
     <>
@@ -6,11 +6,11 @@ export default function Home() {
       <HeroSection />
       <Navbar />
       <FoodDrinkLayout />
-      <FashoinCard />
       <Merchandise />
       <Business />
-      <PodCast />
-
+      <Afflicate />
+      <Sloution />
+      <Footer />
     </>
   );
 }

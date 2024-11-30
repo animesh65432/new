@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import { Card } from "../components/ui/card"
-import { Trending } from "../components"
+import { Card } from "../../components/ui/card"
+import { Trending } from "../../components"
 
 const Advertisement: React.FC = () => {
     return (

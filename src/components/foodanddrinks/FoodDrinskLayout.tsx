@@ -1,7 +1,7 @@
 import React from "react";
-import { CardOfFooddrinksandTopdestination } from "../helper"
-import { CardOFTopDestinationsAndFoods, Advertisement } from "../components"
-import { Button } from "../components/ui/button"
+import { CardOfFooddrinksandTopdestination } from "../../helper"
+import { CardOFTopDestinationsAndFoods, Advertisement } from "../../components"
+import { Button } from "../../components/ui/button"
 
 const FoodDrinkLayout: React.FC = () => {
     return <>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FashionCard: React.FC = () => {
+const Mernchadisetitle: React.FC = () => {
     return (
         <div className='mt-[6.25rem]'>
             <div className='flex flex-col items-center text-custom-green'>
@@ -16,4 +16,4 @@ const FashionCard: React.FC = () => {
     );
 };
 
-export default FashionCard;
+export default Mernchadisetitle

@@ -1,4 +1,4 @@
-import card from "../../public/images/podcast/22662.png"
+import card from "../../public/images/podcast/58181(1).jpg"
 export const ImagesOfArray = [
     {
         image: "/images/image.png"
@@ -90,23 +90,42 @@ export const CardOfPodcastItems = [
         title: "Wanderlust Waves",
         summary: "Embark on journey of stories,tips and adventures from around the globe",
         Episode: "Episode 1",
+        color: "green"
     },
     {
-        image: "/images/podcast/22662.png",
+        image: "/images/podcast/58181(1).jpg",
         title: "The hustle hub",
         summary: "Learn From indursty leaders ,innovators and  entrepreneurs on growing your...",
         Episode: "Episode 4",
+        color: ""
     },
     {
-        image: "/images/podcast/22662.png",
+        image: "/images/podcast/58181.jpg",
         title: "Threads & Trends",
         summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
         Episode: "Episode 3",
+        color: ""
     },
     {
-        image: "/images/podcast/22662.png",
-        title: "Wanderlust Waves",
-        summary: "Embark on journey of stories,tips and adventures from around the globe",
-        Episode: "Episode 1",
+        image: "/images/podcast/58181.jpg",
+        title: "Threads & Trends",
+        summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
+        Episode: "Episode 3",
+        color: ""
+    },
+    {
+        image: "/images/podcast/58181.jpg",
+        title: "Threads & Trends",
+        summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
+        Episode: "Episode 3",
+        color: ""
+    },
+    {
+        image: "/images/podcast/58181.jpg",
+        title: "Threads & Trends",
+        summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
+        Episode: "Episode 3",
+        color: ""
     }
+
 ]

@@ -39,6 +39,8 @@ body {
     --color-custom-green-alpha: 1;
     --customwhite-color :0 0% 100%;
     --customeyollow-color: 45 97% 50%;
+    --custom-backgroud-white-color: 30, 100%, 98%;
+    --custome-dark-green : 168 80% 6%;
   
   }
   .dark {
@@ -72,6 +74,8 @@ body {
     --customblue-color: hsl(217, 89%, 61%);
     --custom-black: hsl(0, 0%, 12%);
     --custom-light-green-color: hsl(141, 76%, 48%);
+    --custom-backgroud-white-color: hsla(30,100%,98%);
+    --custome-dark-green : hsl(168, 80%, 6%);
   }
 }
 

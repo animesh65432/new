@@ -1,6 +1,8 @@
 import React from 'react'
-import SpotiyPodcastIcon from "../assets/podcast/Vector.svg"
+import SpotiyPodcastIcon from "../../assets/podcast/Vector.svg"
 import Image from 'next/image'
+import { CardOfPodcastItems } from "../../helper"
+import { PodcastCard } from "../../components"
 
 const PodCast: React.FC = () => {
     return (
@@ -12,6 +14,10 @@ const PodCast: React.FC = () => {
                 <div>
                     <p className='text-custom-green font-semibold text-[2rem]'>PODCASTS</p>
                 </div>
+            </div>
+
+            <div>
+
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 import React from "react";
-import { ImagesOfArray } from "../helper";
-import { Button } from "../components/ui/button"
+import { ImagesOfArray } from "../../helper";
+import { Button } from "../../components/ui/button"
 import Image from "next/image";
 
 const HeroSection: React.FC = () => {
