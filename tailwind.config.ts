@@ -103,6 +103,12 @@ export default {
 					50: 'hsla(168,80%,6%,1)',
 					75: 'hsla(168,80%,6%,1)',
 					hover: 'hsla(168,80%,6%,1)'
+				},
+				"custom-dark-blue": {
+					DEFAULT: "hsla(205,100%,15%,1)",
+					50: 'hsla(205,100%,15%,1)',
+					75: 'hsla(205,100%,15%,1)',
+					hover: 'hsla(205,100%,15%,1)'
 				}
 			},
 			borderRadius: {

@@ -14,11 +14,13 @@ import PodcastCard from "./podcast/PodcastCard";
 import Afflicate from "./Affliliateporgram/Afflicate";
 import Sloution from "./Solution/Sloution";
 import Footer from "./Footer";
-
+import CardandCoupons from "./cardandcoupons/CardandCoupons";
+import CuponCard from "./cardandcoupons/CuponCard";
+import Newsletter from "./Newsletter/Newsletter";
 export {
     Header, HeroSection, CardOFTopDestinationsAndFoods, Advertisement, Trending, Navbar, FoodDrinkLayout, Business
     , PodCast, MerchandiseCard, Mernchadisetitle, Merchandise, PodcastCard, Afflicate, Sloution,
-    Footer
+    Footer, CardandCoupons, CuponCard, Newsletter
 }
 
 

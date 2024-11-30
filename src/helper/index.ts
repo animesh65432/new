@@ -1,4 +1,4 @@
-import card from "../../public/images/podcast/58181(1).jpg"
+import card from "../../public/images/cardandcupons/image(1).png"
 export const ImagesOfArray = [
     {
         image: "/images/image.png"
@@ -128,4 +128,20 @@ export const CardOfPodcastItems = [
         color: ""
     }
 
+]
+
+export const CardandCoupons = [
+    {
+        image: "/images/cardandcupons/8461.png",
+        title: "Travel Offers",
+    }, {
+        image: "/images/cardandcupons/image.png",
+        title: "Food & Drinks"
+    }, {
+        image: "/images/cardandcupons/freepikcandid.png",
+        title: "Business Offres"
+    }, {
+        image: "/images/cardandcupons/image(1).png",
+        title: "Lifestyle Offers"
+    }
 ]

@@ -41,6 +41,7 @@ body {
     --customeyollow-color: 45 97% 50%;
     --custom-backgroud-white-color: 30, 100%, 98%;
     --custome-dark-green : 168 80% 6%;
+    --custom-dark-blue:200 100% 15%;
   
   }
   .dark {
@@ -76,6 +77,7 @@ body {
     --custom-light-green-color: hsl(141, 76%, 48%);
     --custom-backgroud-white-color: hsla(30,100%,98%);
     --custome-dark-green : hsl(168, 80%, 6%);
+    --custom-dark-blue: hsl(200,100%,15%)
   }
 }
 
