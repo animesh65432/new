@@ -1,4 +1,6 @@
 import React from 'react'
+import { CardandCouponsLists } from "../../helper"
+import { CuponCard } from "../../components"
 
 const CardandCoupons: React.FC = () => {
     return (
@@ -21,7 +23,11 @@ const CardandCoupons: React.FC = () => {
                 </div>
             </div>
 
-            <div></div>
+            <div className='flex p-[5rem] gap-[6rem] '>
+                {
+                    CardandCouponsLists.map((Cupon, index) => <CuponCard key={index} title={Cupon.title} image={Cupon.image} />)
+                }
+            </div>
         </div>
 
 

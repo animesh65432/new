@@ -1,16 +1,21 @@
+
 import card from "../../public/images/cardandcupons/image(1).png"
 export const ImagesOfArray = [
     {
-        image: "/images/image.png"
+        image: "/images/image.png",
+        title: "Top Destination Awarded"
     },
     {
-        image: "/images/image(1).png"
+        image: "/images/image(1).png",
+        title: "Popular local Dishes"
     },
     {
-        image: "/images/image(2).png"
+        image: "/images/image(2).png",
+        title: "Explore the Cu-Chi Tunnels"
     },
     {
-        image: "/images/city-of-gold-coast-_o7NX2xTe8o-unsplash.png"
+        image: "/images/Vietmannaturalphoto.png",
+        title: "Explore the Cu-Chi Tunnels"
     }
 ]
 
@@ -52,12 +57,21 @@ export const CardOfFooddrinksandTopdestination = [
 export const CardOfTrending = [
     {
         image: "/images/trending/Trendingone.png",
+        title: "The Food Tour Experience,Pho,from Chintatown",
+        by: "james locc",
+        date: "Jan 18"
     },
     {
-        image: "/images/trending/TrendingTwo.png"
+        image: "/images/trending/TrendingTwo.png",
+        title: "A Tapestry of History and Culture",
+        by: "james locc",
+        date: "Jan 08"
     },
     {
-        image: "/images/trending/TrendingThree.png"
+        image: "/images/trending/TrendingThree.png",
+        title: "Natural Wonders Await",
+        by: "james locc",
+        date: "jan 08"
     },
     {
         image: "/images/trending/TrendingFour.png"
@@ -130,7 +144,7 @@ export const CardOfPodcastItems = [
 
 ]
 
-export const CardandCoupons = [
+export const CardandCouponsLists = [
     {
         image: "/images/cardandcupons/8461.png",
         title: "Travel Offers",

@@ -5,7 +5,7 @@ import { Button } from "../../components/ui/button"
 
 const FoodDrinkLayout: React.FC = () => {
     return <>
-        <div className="mt-[80px] flex w-[900px]   space-x-8  ml-[80px] ">
+        <div className="mt-[100px] flex w-[1654px]   space-x-8  ml-[133px] mr-[133px] ">
             <div>
                 {
 

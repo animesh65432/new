@@ -109,6 +109,54 @@ export default {
 					50: 'hsla(205,100%,15%,1)',
 					75: 'hsla(205,100%,15%,1)',
 					hover: 'hsla(205,100%,15%,1)'
+				},
+				"custom-prink-color": {
+					DEFAULT: "hsla(338,100%,94%,1)",
+					50: 'hsla(338,100%,94%,1)',
+					75: 'hsla(338,100%,94%,1)',
+					hover: 'hsla(338,100%,94%,1)'
+				},
+				"custome-light-prink": {
+					DEFAULT: "hsla(27,57%,94%,1)",
+					50: 'hsla(27,57%,94%,1)',
+					75: 'hsla(27,57%,94%,1)',
+					hover: 'hsla(27,57%,94%,1)'
+				},
+				"custom-light-blue": {
+					DEFAULT: "hsla(213,100%,96%,1)",
+					50: 'hsla(213,100%,96%,1)',
+					75: 'hsla(213,100%,96%,1)',
+					hover: 'hsla(213,100%,96%,1)'
+				},
+				"custom-light-green": {
+					DEFAULT: "hsla(169, 30%, 87%, 1)",
+					50: "hsla(169, 30%, 87%, 1)",
+					75: "hsla(169, 30%, 87%, 1)",
+					hover: "hsla(169, 30%, 87%, 1)"
+				},
+				"custom-grey-color": {
+					DEFAULT: "hsla(45,34%,18%,1)",
+					50: "hsla(45,34%,18%,1)",
+					75: "hsla(45,34%,18%,1)",
+					hover: "hsla(45,34%,18%,1)"
+				},
+				"custom-dark-verun-color": {
+					DEFAULT: "hsla(338, 65%, 29%, 1)",
+					50: "hsla(338, 65%, 29%,1)",
+					75: "hsla(338, 65%, 29%, 1)",
+					hover: "hsla(338, 65%, 29%, 1)"
+				},
+				"custom-little-dark-color": {
+					DEFAULT: "hsla(337,29%,55%,1)",
+					50: "hsla(337, 29%, 55%, 1)",
+					75: "hsla(337, 29%, 55%, 1)",
+					hover: "hsla(337, 29%, 55%, 1)"
+				},
+				"custom-moderate-blue-color": {
+					DEFAULT: "hsla(208,40%,33%,1)",
+					50: "hsla(208,40%,33%,1)",
+					75: "hsla(208,40%,33%,1)",
+					hover: "hsla(208,40%,33%,1)"
 				}
 			},
 			borderRadius: {

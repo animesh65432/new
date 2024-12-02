@@ -17,10 +17,12 @@ import Footer from "./Footer";
 import CardandCoupons from "./cardandcoupons/CardandCoupons";
 import CuponCard from "./cardandcoupons/CuponCard";
 import Newsletter from "./Newsletter/Newsletter";
+import Product from "./Product/Product";
+import SheetSide from "./SheetSide";
 export {
     Header, HeroSection, CardOFTopDestinationsAndFoods, Advertisement, Trending, Navbar, FoodDrinkLayout, Business
     , PodCast, MerchandiseCard, Mernchadisetitle, Merchandise, PodcastCard, Afflicate, Sloution,
-    Footer, CardandCoupons, CuponCard, Newsletter
+    Footer, CardandCoupons, CuponCard, Newsletter, Product, SheetSide
 }
 
 

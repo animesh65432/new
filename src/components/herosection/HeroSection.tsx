@@ -1,151 +1,147 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import { ImagesOfArray } from "../../helper";
 import { Button } from "../../components/ui/button"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import Image from "next/image";
+import serchicon from "../../assets/serchicon.svg"
+import arrowright from "../../assets/arrow_right_alt.svg"
+import HeroSectionStar from "../../assets/HeroSectionstar.svg"
 
 const HeroSection: React.FC = () => {
+    const [image, setimage] = useState<string>(ImagesOfArray[0].image)
+    const [title, setitle] = useState<string>(ImagesOfArray[0].title)
+    const onclickchangeimage = (image: string) => {
+        const findtitle = ImagesOfArray.find((item) => item.image === image)
+        setimage(image)
+        setitle(findtitle?.title || "")
+    }
     return (
         <div
-            className="relative"
+            className="flex flex-col h-[929px] relative bg-gradient-to-b from-black/70 to-black/70"
             style={{
-                width: "1519px",
-                height: "800px",
-                backgroundImage: `url('${ImagesOfArray[0].image}')`,
+                backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${image}')`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
         >
 
-            <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/50 z-0"></div>
 
-            <div className="absolute flex items-center h-full pr-[50px] left-[45%] bottom-[35%]  text-customwhite-color-75">
-                <div>
-                    <div className="flex gap-8">
-                        <div>
-                            <input
-                                className="bg-transparent font-oxygen w-[200px] border-2 h-[37px] text-center placeholder-customwhite-color-75"
-                                placeholder="Select Location"
-                            />
-                        </div>
-                        <div>
-                            <input
-                                className="bg-transparent font-oxygen w-[550px] border-2 h-[37px] text-center placeholder-customwhite-color-75"
-                                placeholder="Search latest news about travel, business, lifestyle, etc..."
-                            />
-                        </div>
+
+            <div className="flex flex-col  2xl:h-[929px]">
+                <div className="flex 2xl:mt-[147px] 2xl:ml-[773px] 2xl:mr-[133px] gap-[14px]">
+                    <Select>
+                        <SelectTrigger className="bg-transparent font-oxygen w-[300px] border-2 border-white h-[56px] text-left placeholder-customwhite-color p-[22px] text-[16px]">
+                            <SelectValue placeholder="Serch Location" className="text-customwhite-color placeholder:text-cus" />
+                        </SelectTrigger>
+                        <SelectContent>
+                            <SelectItem value="new-york">New York</SelectItem>
+                            <SelectItem value="san-francisco">San Francisco</SelectItem>
+                            <SelectItem value="chicago">Chicago</SelectItem>
+                            <SelectItem value="los-angeles">Los Angeles</SelectItem>
+                        </SelectContent>
+                    </Select>
+
+
+                    <div className="border-2 border-white flex items-center w-[700px] h-[56px]">
+                        <input
+                            className="bg-transparent font-oxygen flex-grow h-full text-left placeholder-white px-[22px] text-[16px] outline-none"
+                            placeholder="Search latest news about travel, business, lifestyle, etc..."
+                        />
+                        <Image
+                            src={serchicon}
+                            alt="serchicon"
+                            width={16}
+                            height={16}
+                            className="mr-[10px]"
+                        />
                     </div>
+
                 </div>
 
+                <div className="flex justify-between mt-[54px] mb-[172px] ml-[100px]">
+                    <div className="text-customwhite-color-75">
+                        <p className="text-[60px] font-oxygen font-bold">10 MOST VISITED PLACE</p>
+                        <p className="text-[60px] font-bold mb-[1rem]">IN HO CHI MIN CITY</p>
+
+                        <p className="text-[28px]  font-oxygen">A Complete Guide For Your Travel</p>
+
+                        <Button className="bg-customwhite-color-75 w-[229px] rounded-none mt-[58px] ">
+                            <span className="text-custom-green font-oxygen text-[20px]">Explore Now</span>
+                            <span>
+                                <Image src={arrowright} height={15} width={10} alt="arrow" />
+                            </span>
+                        </Button>
+
+                        <div className="flex gap-[33px] mt-[50px] ">
+                            <div>
+                                <p className="font-oxygen text-[35px]">3K+</p>
+                                <p className="font-sans text-[18px]">E-Books</p>
+                            </div>
+                            <div>
+                                <p className="font-oxygen text-[35px]">5K+</p>
+                                <p className="font-sans text-[18px]">News</p>
+                            </div>
+                            <div>
+                                <p className="font-oxygen text-[35px]">20K+</p>
+                                <p className="font-sans text-[18px]">Locations</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="flex gap-4 mt-[100px]">
+                        <div className="flex flex-col gap-4">
+                            <div className="w-[341px] h-[333px] flex flex-col  items-center">
+                                <div className="w-[309px] h-[296px] relative ">
+                                    <Image
+                                        src={`${image}`}
+                                        alt="Card Image"
+                                        fill
+                                    />
+                                </div>
+                                <div className="w-[341px] h-[81px] bg-customwhite-color flex items-center justify-center flex-col">
+                                    <div className="flex text-customeyollow-color-75">
+                                        <Image src={HeroSectionStar} height={20} width={20} alt="star" />
+                                        <Image src={HeroSectionStar} height={20} width={20} alt="star" />
+                                        <Image src={HeroSectionStar} height={20} width={20} alt="star" />
+                                        <Image src={HeroSectionStar} height={20} width={20} alt="star" />
+                                    </div>
+                                    <p className="text-center text-customblue-color-75 text-[20px]">{title}</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        {ImagesOfArray.map((card, index) => (
+                            image !== card.image ?
+                                <div
+                                    key={index}
+                                    className="mt-7 flex flex-col cursor-pointer w-[241px] h-[328px]"
+                                    onClick={() => onclickchangeimage(`${card.image}`)}
+
+                                >
+                                    <div className="h-[328px] w-[241px] relative">
+                                        <div>
+                                            <Image
+                                                src={`${card.image}`}
+                                                fill
+                                                alt="Card Image"
+                                            />
+                                        </div>
+                                        <div>
+                                            <div className="absolute bottom-0 p-[10px] bg-gradient-to-b from-black/70 to-black/50 flex items-center justify-center w-[241px] h-[68px]">
+                                                <div className="font-sans text-[18px] text-white">
+                                                    <p>{title}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> : null
+                        ))}
+                    </div>
+                </div>
             </div>
 
-            <div className="absolute flex top-48 left-20 text-customwhite-color-75 ">
-                <div className="font-oxygen  text-customwhite-color-75">
-                    <p className="text-[50px]">10 MOST VISITED PLACE</p>
-                    <p className="text-[50px]">IN HO CHI MIN CITY</p>
-
-                    <p className="text-[20px] mb-20">A Complete Guide For Your Travel</p>
-
-                    <Button className="bg-customwhite-color-75 w-[150px] ">
-                        <span className="text-custom-green-75 font-oxygen">Explore Now</span>
-                    </Button>
-
-                    <div className="flex gap-16 mt-11 ">
-                        <div>
-                            <p className="font-oxygen text-[35px]">3K+</p>
-                            <p className="font-sans text-[18px]">E-Books</p>
-                        </div>
-                        <div>
-                            <p className="font-oxygen text-[35px]">5K+</p>
-                            <p className="font-sans text-[18px]">News</p>
-                        </div>
-                        <div>
-                            <p className="font-oxygen text-[35px]">20K+</p>
-                            <p className="font-sans text-[18px]">Locations</p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div className="ml-24 mt-24 flex gap-4">
-                    <div className="flex flex-col gap-4">
-                        <div className="w-[280px] h-[240px]">
-                            <Image
-                                src={`${ImagesOfArray[0].image}`}
-                                alt="Card Image"
-                                width={280}
-                                height={240}
-                            />
-                        </div>
-                        <div className="w-[300px] h-[60px] bg-customwhite-color-75 flex items-center justify-center flex-col">
-                            <div className="flex text-customeyollow-color-75">
-                                {Array.from({ length: 5 }, (_, i) => (
-                                    <span key={i}>&#9733;</span>
-                                ))}
-                            </div>
-                            <p className="text-center text-customblue-color-75">Top Destination Awarded</p>
-                        </div>
-                    </div>
-
-                    <div className="mt-7 flex flex-col">
-                        <div className="h-[13rem] w-[13rem]">
-                            <div className="h-[13rem] w-[13rem] mb-2">
-                                <Image
-                                    src={`${ImagesOfArray[1].image}`}
-                                    width={208}
-                                    height={208}
-                                    alt="Card Image"
-                                />
-                            </div>
-                            <div className=" bg-transparent flex items-center justify-center w-[13rem] h-[68px] bg-gradient-to-b from-black/70 to-black/50">
-                                <div className="font-sans text-[18px] ">
-                                    <p>popular Local</p>
-                                    <p>Dishes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mt-7 flex flex-col">
-                        <div className="h-[13rem] w-[13rem]">
-                            <div className="h-[13rem] w-[13rem] mb-2">
-                                <Image
-                                    src={`${ImagesOfArray[2].image}`}
-                                    width={208}
-                                    height={208}
-                                    alt="Card Image"
-                                />
-                            </div>
-                            <div className=" bg-transparent flex items-center justify-center w-[13rem] h-[68px] bg-gradient-to-b from-black/70 to-black/50">
-                                <div className="font-sans text-[18px] ">
-                                    <p>Explore the Cu-chi</p>
-                                    <p>Tunels</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mt-7 flex flex-col">
-                        <div className="h-[13rem] w-[13rem]">
-                            <div className="h-[13rem] w-[13rem] mb-2">
-                                <Image
-                                    src={`${ImagesOfArray[2].image}`}
-                                    width={208}
-                                    height={208}
-                                    alt="Card Image"
-                                />
-                            </div>
-                            <div className=" bg-transparent bg-gradient-to-b from-black/70 to-black/50 flex items-center justify-center w-[13rem] h-[68px] ">
-                                <div className="font-sans text-[18px] ">
-                                    <p>popular Local</p>
-                                    <p>Dishes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-            </div>
         </div>
     );
 };
