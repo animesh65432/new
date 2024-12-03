@@ -20,13 +20,13 @@ const Header: React.FC = () => {
                         src={Iconheaderimages}
                         alt="logo"
                         style={{
-                            width: "6.5625rem",
-                            height: "3.3125rem",
+                            width: 170,
+                            height: 54,
                         }}
                     />
                 </div>
 
-                <div className="flex justify-center items-center text-1rem 2xl:gap-[60px] xl:gap-4 lg:gap-3">
+                <div className="flex justify-center items-center text-[18px] 2xl:gap-[60px] xl:gap-4 lg:gap-3">
                     <div className="font-oxygen text-customwhite-color">Top Destination</div>
                     <div className="font-oxygen text-customwhite-color">Food & Drinks</div>
                     <div className="font-oxygen text-customwhite-color">Activities & Experiences</div>
@@ -34,10 +34,10 @@ const Header: React.FC = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                    <FaFacebookF className="text-white" />
-                    <BsTwitterX className="text-white" />
-                    <LinkedInIcon className="text-white" />
-                    <InstagramIcon className="text-white" />
+                    <FaFacebookF className="text-white w-[42] h-[42]" />
+                    <BsTwitterX className="text-white w-[42] h-[42]" />
+                    <LinkedInIcon className="text-white w-[45] h-[45]" />
+                    <InstagramIcon className="text-white w-[42] h-[42]" />
                 </div>
             </div>
 

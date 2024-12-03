@@ -15,7 +15,7 @@ export const ImagesOfArray = [
     },
     {
         image: "/images/Vietmannaturalphoto.png",
-        title: "Explore the Cu-Chi Tunnels"
+        title: "Popular location at Gold Coast"
     }
 ]
 
@@ -148,7 +148,7 @@ export const CardOfPodcastItems = [
         summary: "Embark on journey of stories,tips and adventures from around the globe",
         Episode: "Episode 1",
         color: true,
-        background_color: "custom-light-green-col-background"
+        background_color: "--custom-light-green-col-background"
     },
 
     {
@@ -157,7 +157,7 @@ export const CardOfPodcastItems = [
         summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
         Episode: "Episode 3",
         color: false,
-        background_color: "custom-light-yellow-background-color"
+        background_color: "--custom-light-yellow-background-color"
     },
 
     {
@@ -167,6 +167,20 @@ export const CardOfPodcastItems = [
         Episode: "Episode 3",
         color: false
     },
+    {
+        image: "/images/podcast/58181.jpg",
+        title: "Threads & Trends",
+        summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
+        Episode: "Episode 3",
+        color: false
+    },
+    {
+        image: "/images/podcast/58181.jpg",
+        title: "Threads & Trends",
+        summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
+        Episode: "Episode 3",
+        color: false
+    }
 
 
 ]
@@ -184,5 +198,30 @@ export const CardandCouponsLists = [
     }, {
         image: "/images/cardandcupons/image(1).png",
         title: "Lifestyle Offers"
+    }
+]
+
+export const TradingEbooksLists = [
+    {
+        image: ""
+    },
+    {
+        image: ""
+    },
+    {
+        image: ""
+    }
+]
+
+export const BusinessEbooks = [
+    {
+        image: "/images/business/Group1.png",
+        title: "Tradational Places"
+    }, {
+        image: "/images/business/Group3.png",
+        title: "Best Cafe"
+    }, {
+        image: "/images/business/Group2.png",
+        title: "Best Beaches"
     }
 ]

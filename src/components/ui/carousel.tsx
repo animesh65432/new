@@ -208,7 +208,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute   h-[50px] w-[50px] mt-11 ",
+        "absolute   h-[50px] w-[50px] mt-11 hover:bg-custom-green ",
         orientation === "horizontal"
           ? "-left-12 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -237,17 +237,17 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-[50px] w-[50px] mt-11 bg-custom-green ",
+        "absolute h-[50px] w-[50px] mt-11  hover:bg-custom-green hover:text-customwhite-color",
         orientation === "horizontal"
           ? "-right-12 top-1/2 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
+          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90 ",
         className
       )}
       // disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <Image src={nexticon} alt="next" className="h-10 w-4 " />
+      <Image src={previcon} alt="next" className="h-10 w-4  transform rotate-180" />
       <span className="sr-only">Next slide</span>
     </Button >
   )

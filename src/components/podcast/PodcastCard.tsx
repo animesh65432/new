@@ -12,10 +12,13 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import PrevIcon from "../../assets/prev.svg";
 import StarIcon from "../../assets/HeroSectionstar.svg";
-// className="w-full h-[667px] rounded-none flex flex-col"
+import shopfiyicon from "../../assets/podcast/Vector.svg"
 
 const PodcastCard = () => {
+
+
     return (
+
         <div className="mt-[73px] flex flex-col items-center">
             <div className=" w-full max-w-[1665px]" >
                 <Carousel
@@ -31,49 +34,50 @@ const PodcastCard = () => {
                                 key={index}
                                 className="flex-shrink-0 basis-[520px] overflow-hidden"
                             >
-                                <div className="w-full h-[667px] rounded-none flex flex-col" style={{
+                                <div className={`w-full h-[667px] rounded-none flex flex-col`} style={{
                                     backgroundImage: `url(${podcast.image})`,
                                     backgroundSize: "cover",
                                 }}>
-                                    <CardContent className="p-0 flex-grow">
-                                        <Image
-                                            src={podcast.image}
-                                            width={470}
-                                            height={384}
-                                            alt={podcast.title}
-                                            className="w-full h-[384px] object-cover"
-                                        />
-                                        <div className="p-4">
-                                            <h3 className="text-lg font-semibold">{podcast.title}</h3>
-                                            <p className="text-sm text-gray-600 mt-2">
-                                                {podcast.summary}
-                                            </p>
-                                            <div className="flex items-center gap-2 mt-4">
-                                                <span className="text-sm font-medium">
-                                                    {podcast.Episode}
-                                                </span>
-                                                {podcast.color && (
-                                                    <Image
-                                                        src={StarIcon}
-                                                        alt="star icon"
-                                                        width={16}
-                                                        height={16}
-                                                    />
-                                                )}
+                                    <div className={` h-full px-4 py-7 rounded-xl bg-[var(${podcast.background_color})]`} >
+                                        <CardContent >
+                                            <Image
+                                                src={podcast.image}
+                                                width={470}
+                                                height={384}
+                                                alt={podcast.title}
+                                                className="w-full h-[384px] object-cover"
+                                            />
+                                            <div className="p-4">
+                                                <h3 className="text-lg font-semibold">{podcast.title}</h3>
+                                                <p className="text-sm text-gray-600 mt-2">
+                                                    {podcast.summary}
+                                                </p>
+                                                <div className="flex items-center gap-2 mt-4">
+                                                    <span className="text-sm font-medium">
+                                                        {podcast.Episode}
+                                                    </span>
+                                                    {podcast.color && (
+                                                        <Image
+                                                            src={StarIcon}
+                                                            alt="star icon"
+                                                            width={16}
+                                                            height={16}
+                                                        />
+                                                    )}
+                                                </div>
                                             </div>
-                                        </div>
-                                    </CardContent>
-                                    <Button className="bg-custom-green w-full rounded-none">
-                                        Explore Now
-                                    </Button>
+                                        </CardContent>
+                                        <Button className="bg-custom-green w-full rounded-none">
+                                            Explore Now
+                                        </Button>
+                                    </div>
                                 </div>
                             </CarouselItem>
                         ))}
                     </CarouselContent>
 
-                    {/* Navigation Buttons */}
-                    <div className="absolute inset-0 flex justify-between items-center px-4">
-                        <CarouselPrevious className="bg-white p-2 rounded-full shadow-lg cursor-pointer">
+                    <div className="">
+                        <CarouselPrevious className="bg-white p-2 rounded-full shadow-lg cursor-pointer absolute -left-2">
                             <Image
                                 src={PrevIcon}
                                 alt="arrow left"
@@ -81,7 +85,7 @@ const PodcastCard = () => {
                                 height={20}
                             />
                         </CarouselPrevious>
-                        <CarouselNext className="bg-white p-2 rounded-full shadow-lg cursor-pointer">
+                        <CarouselNext className="bg-white p-2 rounded-full shadow-lg cursor-pointer absolute -right-2">
                             <Image
                                 src={PrevIcon}
                                 alt="arrow right"

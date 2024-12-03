@@ -9,7 +9,7 @@ const Solution: React.FC = () => {
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
             }}
-            className="flex h-[57rem] p-[4rem] gap-[10rem]"
+            className="flex h-[1050] p-[4rem] gap-[10rem]  justify-center items-center  "
         >
             <div
                 style={{
@@ -18,7 +18,7 @@ const Solution: React.FC = () => {
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
                 }}
-                className="w-[35rem] rounded-md"
+                className=""
             >
 
             </div>

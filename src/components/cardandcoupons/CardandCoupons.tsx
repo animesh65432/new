@@ -11,22 +11,26 @@ const CardandCoupons: React.FC = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}
-            className=' w-[1519px] h-[800px] p-3'
+
+            className='h-[1009px]'
+
         >
-            <div>
-                <div className='p-16'>
-                    <p className='text-customwhite-color-50 text-[1.5rem] mb-[2rem]'>EXPLORE FANTASTIC  DEALS</p>
+            <div className='pl-[130px] pr-[130px] pt-[137px] pb-[136px]'>
+                <div>
+                    <div >
+                        <p className='text-customwhite-color-50 text-[1.5rem] mb-[2rem]'>EXPLORE FANTASTIC  DEALS</p>
 
-                    <p className='text-customwhite-color text-[2rem] font-semibold'>
-                        OUR LATEST OFFERS AND COUPONS
-                    </p>
+                        <p className='text-customwhite-color text-[2rem] font-semibold'>
+                            OUR LATEST OFFERS AND COUPONS
+                        </p>
+                    </div>
                 </div>
-            </div>
 
-            <div className='flex p-[5rem] gap-[6rem] '>
-                {
-                    CardandCouponsLists.map((Cupon, index) => <CuponCard key={index} title={Cupon.title} image={Cupon.image} />)
-                }
+                <div className='flex p-[5rem] gap-[6rem] '>
+                    {
+                        CardandCouponsLists.map((Cupon, index) => <CuponCard key={index} title={Cupon.title} image={Cupon.image} />)
+                    }
+                </div>
             </div>
         </div>
 

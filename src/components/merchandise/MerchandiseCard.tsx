@@ -13,7 +13,6 @@ import {
 import { CardOfMerchandise } from "../../helper";
 import Image from 'next/image';
 import PrevIcon from "../../assets/prev.svg"
-import NextIcon from "../../assets/next.svg"
 import StarIcon from "../../assets/HeroSectionstar.svg"
 const Merchandise: React.FC = () => {
     return (
@@ -28,7 +27,7 @@ const Merchandise: React.FC = () => {
                 <CarouselContent className="ml-[35px] pl-[35px] flex gap-[35px]">
                     {CardOfMerchandise.map((merchandise, index) => (
                         <CarouselItem key={index} className="pl-[35px] basis-[302px]">
-                            <Card className="w-[302px] h-[565px] rounded-none flex flex-col">
+                            <Card className="w-[302px] h-[565px] rounded-none flex flex-col border-none">
                                 <CardContent className="p-0 flex-grow">
                                     <Image
                                         src={merchandise.image}
@@ -38,7 +37,7 @@ const Merchandise: React.FC = () => {
                                         className="w-full h-[384px] object-cover"
                                     />
                                     <div >
-                                        <p className="font-semibold text-[24px] mt-[44px]">{merchandise.title}</p>
+                                        <p className="font-semibold text-[24px] mt-[44px] font-sans">{merchandise.title}</p>
                                         <p className="flex items-center mt-[20px] mb-[20px]">
                                             4.5
                                             <Image

@@ -8,7 +8,7 @@ const Mernchadisetitle: React.FC = () => {
                     T O P
                     <span className='ml-4'>P I C K E D</span>
                 </p>
-                <p className='text-[45px] font-bold text-custom-green '>
+                <p className='text-[45px] font-bold text-custom-green font-oxygen '>
                     MERCHANDISE
                 </p>
             </div>

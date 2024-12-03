@@ -24,7 +24,7 @@ const FoodDrinkLayout: React.FC = () => {
             </div>
         </div>
         <div className="flex justify-center items-center mt-[50px]">
-            <Button className="bg-custom-green w-[220px] h-[65px] rounded-none text-[18px] flex items-center gap-2">
+            <Button className="bg-custom-green w-[220px] h-[65px] rounded-none text-[18px] flex items-center gap-2 font-medium">
                 VIEW MORE
                 <Image
                     src={ArroIcon}

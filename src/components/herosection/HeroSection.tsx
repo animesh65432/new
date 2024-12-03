@@ -35,8 +35,8 @@ const HeroSection: React.FC = () => {
         >
             <div className="flex flex-col 2xl:h-[929px]">
                 <div className="flex 2xl:mt-[147px] 2xl:ml-[773px] 2xl:mr-[133px] gap-[14px]">
-                    <Select>
-                        <SelectTrigger className="bg-transparent font-oxygen w-[300px] border-2 border-white h-[56px] text-left placeholder-customwhite-color p-[22px] text-[16px]">
+                    <Select >
+                        <SelectTrigger className="bg-transparent font-oxygen w-[300px] border-2 border-white h-[56px] text-left placeholder-customwhite-color p-[22px] text-[16px] rounded-none">
                             <SelectValue placeholder="Serch Location" className="text-customwhite-color placeholder:text-cus" />
                         </SelectTrigger>
                         <SelectContent>
@@ -49,7 +49,7 @@ const HeroSection: React.FC = () => {
 
                     <div className="border-2 border-white flex items-center w-[700px] h-[56px]">
                         <input
-                            className="bg-transparent font-oxygen flex-grow h-full text-left placeholder-white px-[22px] text-[16px] outline-none"
+                            className="bg-transparent font-oxygen flex-grow h-full text-left placeholder-white px-[22px] text-[16px] outline-none 	"
                             placeholder="Search latest news about travel, business, lifestyle, etc..."
                         />
                         <Image
@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
                             alt="serchicon"
                             width={16}
                             height={16}
-                            className="mr-[10px]"
+                            className="mr-[23px]"
                         />
                     </div>
                 </div>
@@ -77,34 +77,34 @@ const HeroSection: React.FC = () => {
 
                         <div className="flex gap-[33px] mt-[50px]">
                             <div>
-                                <p className="font-oxygen text-[35px]">3K+</p>
-                                <p className="font-sans text-[18px]">E-Books</p>
+                                <p className="font-oxygen text-[42px] font-bold">3K+</p>
+                                <p className="font-sans text-[24px] font-medium">E-Books</p>
                             </div>
                             <div>
-                                <p className="font-oxygen text-[35px]">5K+</p>
-                                <p className="font-sans text-[18px]">News</p>
+                                <p className="font-oxygen text-[42px] font-bold">5K+</p>
+                                <p className="font-sans text-[24px] font-medium">News</p>
                             </div>
                             <div>
-                                <p className="font-oxygen text-[35px]">20K+</p>
-                                <p className="font-sans text-[18px]">Locations</p>
+                                <p className="font-oxygen text-[42px] font-bold">20K+</p>
+                                <p className="font-sans text-[24px] font-medium ">Locations</p>
                             </div>
                         </div>
                     </div>
 
                     <div className="flex gap-4 mt-[100px]">
                         <div className="flex flex-col gap-4">
-                            <div className="w-[341px] h-[333px] flex flex-col items-center">
+                            <div className="w-[341px] h-[333px] flex flex-col items-center ">
                                 <div className="w-[309px] h-[296px] relative">
                                     <Image src={`${image}`} alt="Card Image" fill />
                                 </div>
-                                <div className="w-[341px] h-[81px] bg-customwhite-color flex items-center justify-center flex-col">
+                                <div className="w-[340px] h-[82px] bg-customwhite-color flex items-center justify-center flex-col 	rounded-sm">
                                     <div className="flex text-customeyollow-color-75">
                                         <Image src={HeroSectionStar} height={20} width={20} alt="star" />
                                         <Image src={HeroSectionStar} height={20} width={20} alt="star" />
                                         <Image src={HeroSectionStar} height={20} width={20} alt="star" />
                                         <Image src={HeroSectionStar} height={20} width={20} alt="star" />
                                     </div>
-                                    <p className="text-center text-customblue-color-75 text-[20px]">{title}</p>
+                                    <p className="text-center text-customblue-color-75 text-[20px] font-oxygen font-bold">{title}</p>
                                 </div>
                             </div>
                         </div>
@@ -121,7 +121,7 @@ const HeroSection: React.FC = () => {
                                         </div>
                                         <div>
                                             <div className="absolute bottom-0 p-[10px] bg-gradient-to-b from-black/70 to-black/50 flex items-center justify-center w-[241px] h-[68px]">
-                                                <div className="font-sans text-[18px] text-white">
+                                                <div className="font-sans text-[18px] text-white text-center font-bold">
                                                     <p>{card.title}</p>
                                                 </div>
                                             </div>

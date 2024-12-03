@@ -43,8 +43,8 @@ const CardOFTopDestinationsAndFoods: React.FC<Props> = (props) => {
                 <CardFooter className="text-sm text-gray-500 font-sans gap-[24px]  flex flex-col mr-[300px]">
                     <div className='flex gap-[20px] mt-[10px]'>
                         <span className='font-oxygen text-[20px] '>by <span className='font-sans text-[20px] font-semibold underline'>{props.by}</span>  </span>        <span className='font-sans text-[20px] font-normal leading-[30px] text-left  decoration-solid decoration-from-font decoration-skip-ink-none'> Published: {props.published}</span></div>
-                    <div className='mr-[250px] h-[46px] w-[139px] ml-[35px] '>
-                        <Button className='bg-customwhite-color rounded-none text-custom-green border-2 border-custom-green text-[16px]'>Read More</Button>
+                    <div className='mr-[200px] h-[46px] w-[139px] ml-[40px] '>
+                        <Button className='bg-customwhite-color rounded-none text-custom-green border-2 border-custom-green text-[16px] hover:text-customwhite-color'>Read More</Button>
                     </div>
                 </CardFooter>
 

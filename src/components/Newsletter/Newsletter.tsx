@@ -11,13 +11,13 @@ const Newsletter: React.FC = () => {
         }} className='h-[24rem] flex justify-center items-center'>
 
             <div >
-                <p className='text-customwhite-color-50 text-[2.2rem] font-semibold'>SIGN UP FOR OUR NEWSLETTER</p>
-                <div className='flex mt-[2rem] gap-[2rem]'>
+                <p className='text-customwhite-color-50  font-oxygen font-bold text-[44px]'>SIGN UP FOR OUR NEWSLETTER</p>
+                <div className='flex mt-[2rem] gap-[12px]'>
                     <div>
-                        <Input placeholder='Your E-Mail' className='h-[3rem] w-[25rem] bg-customwhite-color'></Input>
+                        <Input placeholder='Your E-Mail' className='h-[62px] w-[440px] bg-customwhite-color rounded-none'></Input>
                     </div>
                     <div>
-                        <Button className='rounded-none w-[8rem] h-[3rem]'>SUBMIT</Button>
+                        <Button className='rounded-none w-[145px] h-[62px] font-sans text-[20px] font-medium'>SUBMIT</Button>
                     </div>
                 </div>
             </div>
