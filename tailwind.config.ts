@@ -157,6 +157,24 @@ export default {
 					50: "hsla(208,40%,33%,1)",
 					75: "hsla(208,40%,33%,1)",
 					hover: "hsla(208,40%,33%,1)"
+				},
+				"custom-blue-light-color": {
+					DEFAULT: "hsla(208,63%,16%,1)",
+					50: "hsla(208,63%,16%,1)",
+					75: "hsla(208,63%,16%,1)",
+					hover: "hsla(208,63%,16%,1)"
+				},
+				"custom-light-green-col-background": {
+					DEFAULT: "hsla(168,80%,18%,0.9)",
+					50: "hsla(168,80%,18%,0.9)",
+					75: "hsla(168,80%,18%,0.9)",
+					hover: "hsla(168,80%,18%,0.9)"
+				},
+				"custom-light-yellow-background-color": {
+					DEFAULT: "hsla(27,39%,53%,0.9)",
+					50: "hsla(27,39%,53%,0.9)",
+					75: "hsla(27,39%,53%,0.9)",
+					hover: "hsla(27,39%,53%,0.9)"
 				}
 			},
 			borderRadius: {

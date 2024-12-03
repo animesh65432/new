@@ -1,5 +1,5 @@
 
-import { Header, HeroSection, Navbar, FoodDrinkLayout, Merchandise, Business, Afflicate, Sloution, Footer, CardandCoupons, Newsletter, Product }
+import { Header, HeroSection, Navbar, FoodDrinkLayout, Merchandise, Business, Afflicate, Sloution, Footer, CardandCoupons, Newsletter, Product, PodCast }
   from "../components"
 export default function Home() {
   return (
@@ -10,6 +10,7 @@ export default function Home() {
       <FoodDrinkLayout />
       <Merchandise />
       <Business />
+      <PodCast />
       <Afflicate />
       <Sloution />
       <CardandCoupons />

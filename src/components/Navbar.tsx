@@ -12,12 +12,39 @@ const Navbar: React.FC = () => {
     const [activesandexpenseClicked, setactivesandexpenseClicked] = useState<boolean>(false)
     const [TraveltipsClicked, setTraveltipsClicked] = useState<boolean>(false)
 
+    const onclickthebutton = (title: string) => {
+        if (title === "TopdestinationClicked") {
+            setTopdestinationClicked(!TopdestinationClicked)
+            setfoodanddrinkClicked(false)
+            setactivesandexpenseClicked(false)
+            setTraveltipsClicked(false)
+        }
+        else if (title === "foodanddrinkClicked") {
+            setTopdestinationClicked(false)
+            setfoodanddrinkClicked(!foodanddrinkClicked)
+            setactivesandexpenseClicked(false)
+            setTraveltipsClicked(false)
+        }
+        else if (title === "activesandexpenseClicked") {
+            setTopdestinationClicked(false)
+            setfoodanddrinkClicked(false)
+            setactivesandexpenseClicked(!activesandexpenseClicked)
+            setTraveltipsClicked(false)
+        }
+        else if (title === "TraveltipsClicked") {
+            setTopdestinationClicked(false)
+            setfoodanddrinkClicked(false)
+            setactivesandexpenseClicked(false)
+            setTraveltipsClicked(!TraveltipsClicked)
+        }
+    }
+
     return (
         <div className="flex justify-center items-center mt-[100px]">
             <div className="flex gap-[60px] h-[53px] font-oxygen text-[1.5rem]">
                 <div
                     className="flex flex-col items-center w-[248px] h-[34px]"
-                    onClick={() => setTopdestinationClicked(!TopdestinationClicked)}
+                    onClick={() => onclickthebutton("TopdestinationClicked")}
                 >
                     <div className={`flex items-center gap-2 ${TopdestinationClicked ? "font-bold text-custom-green text-[28px]" : ""}`}>
                         <Image src={Topdestination} alt="location" width={21} height={34} />
@@ -30,7 +57,7 @@ const Navbar: React.FC = () => {
 
                 <div
                     className="flex flex-col items-center w-[193px] h-[34px]"
-                    onClick={() => setfoodanddrinkClicked(!foodanddrinkClicked)}
+                    onClick={() => onclickthebutton("foodanddrinkClicked")}
                 >
                     <div className={`flex items-center gap-2 ${foodanddrinkClicked ? "font-bold text-custom-green text-[28px]" : ""}`}>
                         <Image
@@ -48,7 +75,7 @@ const Navbar: React.FC = () => {
 
                 <div
                     className="flex flex-col items-center w-[288px] h-[34px]"
-                    onClick={() => setactivesandexpenseClicked(!activesandexpenseClicked)}
+                    onClick={() => onclickthebutton("activesandexpenseClicked")}
                 >
                     <div className={`flex items-center gap-2 ${activesandexpenseClicked ? "font-bold text-custom-green text-[28px]" : ""}`}>
                         <Image
@@ -68,7 +95,7 @@ const Navbar: React.FC = () => {
 
                 <div
                     className="flex flex-col items-center w-[149px] h-[34px]"
-                    onClick={() => setTraveltipsClicked(!TraveltipsClicked)}
+                    onClick={() => onclickthebutton("TraveltipsClicked")}
                 >
                     <div className={`flex items-center gap-2 ${TraveltipsClicked ? "font-bold text-custom-green text-[28px]" : ""}`}>
                         <Image src={Traveltips} alt="travel tips" width={21} height={34} />

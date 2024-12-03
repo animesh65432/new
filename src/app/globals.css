@@ -49,7 +49,10 @@ body {
     --custom-grey-color : 45,34%,18%;
     --custom-dark-verun-color :338,65%,29%,1;
     --custom-little-dark-color :337,29%,55%,1;
-    --custom-moderate-blue-color :208,40%,33%,1
+    --custom-moderate-blue-color :208,40%,33%,1;
+    --custom-blue-light-color : 208,63%,16%,1;
+    --custom-light-green-col-background :168,80%,18%,0.9;
+    --custom-light-yellow-background-color :27,39%,53%,0.9;
   
   }
   .dark {
@@ -93,7 +96,10 @@ body {
     --custom-grey-color : hsl(45,34%,18%);  
     --custom-dark-verun-color : hsl(338,65%,29%);
     --custom-little-dark-color :hsl(337,29%,55%);
-    --custom-moderate-blue-color: hsl(208,40%,33%,1)
+    --custom-moderate-blue-color: hsl(208,40%,33%,1);
+    --custom-blue-light-color : hsl(208,63%,16%,1);
+    --custom-light-green-col-background :hsla(168,80%,18%,0.9);
+    --custom-light-yellow-background-color :hsla(27,39%,53%,0.9);
   }
 }
 

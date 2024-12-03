@@ -59,32 +59,61 @@ export const CardOfTrending = [
         image: "/images/trending/Trendingone.png",
         title: "The Food Tour Experience,Pho,from Chintatown",
         by: "james locc",
-        date: "Jan 18"
+        date: "Jan 18",
+        star: "4.4"
     },
     {
         image: "/images/trending/TrendingTwo.png",
         title: "A Tapestry of History and Culture",
         by: "james locc",
-        date: "Jan 08"
+        date: "Jan 08",
+        star: "4.2"
     },
     {
         image: "/images/trending/TrendingThree.png",
         title: "Natural Wonders Await",
         by: "james locc",
-        date: "jan 08"
+        date: "jan 08",
+        star: "3.9"
     },
     {
-        image: "/images/trending/TrendingFour.png"
+        image: "/images/trending/TrendingThree.png",
+        title: "Natural Wonders Await",
+        by: "james locc",
+        date: "jan 08",
+        star: "4.5"
+    },
+    {
+        image: "/images/trending/Trendingone.png",
+        title: "The Food Tour Experience,Pho,from Chintatown",
+        by: "james locc",
+        date: "Jan 18",
+        star: "4.4"
+    },
+    {
+        image: "/images/trending/TrendingTwo.png",
+        title: "A Tapestry of History and Culture",
+        by: "james locc",
+        date: "Jan 08",
+        star: "4.2"
+    },
+    {
+        image: "/images/trending/TrendingThree.png",
+        title: "Natural Wonders Await",
+        by: "james locc",
+        date: "jan 08",
+        star: "3.9"
     }
 ]
 
 export const CardOfMerchandise = [
     {
         image: "/images/merchandise/1544.png",
-        title: "Comfortable T-Shirts"
+        title: "Comfortable T-Shirts",
+
     }, {
         image: "/images/merchandise/4226.png",
-        title: "Comfortable T-Shirts"
+        title: "Comfortable T-Shirts",
     },
     {
         image: "/images/merchandise/12432.png",
@@ -95,6 +124,20 @@ export const CardOfMerchandise = [
     }, {
         image: "/images/merchandise/17341.jpg",
         title: "Comfortable T-Shirts"
+    },
+    {
+        image: "/images/merchandise/1544.png",
+        title: "Comfortable T-Shirts"
+    }, {
+        image: "/images/merchandise/4226.png",
+        title: "Comfortable T-Shirts"
+    },
+    {
+        image: "/images/merchandise/1544.png",
+        title: "Comfortable T-Shirts"
+    }, {
+        image: "/images/merchandise/4226.png",
+        title: "Comfortable T-Shirts"
     }
 ]
 
@@ -104,43 +147,27 @@ export const CardOfPodcastItems = [
         title: "Wanderlust Waves",
         summary: "Embark on journey of stories,tips and adventures from around the globe",
         Episode: "Episode 1",
-        color: "green"
+        color: true,
+        background_color: "custom-light-green-col-background"
     },
-    {
-        image: "/images/podcast/58181(1).jpg",
-        title: "The hustle hub",
-        summary: "Learn From indursty leaders ,innovators and  entrepreneurs on growing your...",
-        Episode: "Episode 4",
-        color: ""
-    },
+
     {
         image: "/images/podcast/58181.jpg",
         title: "Threads & Trends",
         summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
         Episode: "Episode 3",
-        color: ""
+        color: false,
+        background_color: "custom-light-yellow-background-color"
     },
+
     {
         image: "/images/podcast/58181.jpg",
         title: "Threads & Trends",
         summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
         Episode: "Episode 3",
-        color: ""
+        color: false
     },
-    {
-        image: "/images/podcast/58181.jpg",
-        title: "Threads & Trends",
-        summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
-        Episode: "Episode 3",
-        color: ""
-    },
-    {
-        image: "/images/podcast/58181.jpg",
-        title: "Threads & Trends",
-        summary: "Stay ahead of the fashion curve with the latest style,tips,and ,desiner secrets",
-        Episode: "Episode 3",
-        color: ""
-    }
+
 
 ]
 
