@@ -5,11 +5,11 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
 
-
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import previcon from "../../assets/prev.svg"
 import Image from "next/image"
+
 type CarouselApi = UseEmblaCarouselType[1]
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 type CarouselOptions = UseCarouselParameters[0]
@@ -207,7 +207,7 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute   h-[50px] w-[50px] mt-11 hover:bg-custom-green ",
+        "absolute h-[50px] w-[50px] mt-11 hover:bg-custom-green",
         orientation === "horizontal"
           ? "-left-12 top-1/2 -translate-y-1/2"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
@@ -217,7 +217,13 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <Image src={previcon} alt="previous" className="h-10 w-4 " />
+      <Image
+        src={previcon}
+        alt="previous"
+        width={20}
+        height={40}
+        className="h-10 w-4"
+      />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -236,19 +242,25 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-[50px] w-[50px] mt-11  hover:bg-custom-green hover:text-customwhite-color",
+        "absolute h-[50px] w-[50px] mt-11 hover:bg-custom-green hover:text-customwhite-color",
         orientation === "horizontal"
           ? "-right-12 top-1/2 -translate-y-1/2"
-          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90 ",
+          : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
-      // disabled={!canScrollNext}
+      disabled={!canScrollNext}
       onClick={scrollNext}
       {...props}
     >
-      <Image src={previcon} alt="next" className="h-10 w-4  transform rotate-180" />
+      <Image
+        src={previcon}
+        alt="next"
+        width={20}
+        height={40}
+        className="h-10 w-4 transform rotate-180"
+      />
       <span className="sr-only">Next slide</span>
-    </Button >
+    </Button>
   )
 })
 CarouselNext.displayName = "CarouselNext"
