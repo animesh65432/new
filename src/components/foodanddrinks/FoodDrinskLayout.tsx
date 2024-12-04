@@ -20,7 +20,7 @@ const FoodDrinkLayout: React.FC = () => {
                 }
             </div>
             <div >
-                <Advertisement />
+                <Advertisement />//fix
             </div>
         </div>
         <div className="flex justify-center items-center mt-[50px]">
