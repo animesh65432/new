@@ -119,7 +119,7 @@ body {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground overflow-hidden overflow-y-scroll;
+    @apply bg-background text-foreground ;
   }
   .gradient-custom {
     background: linear-gradient(to right, hsl(200, 75%, 50%), hsl(340, 80%, 60%));
