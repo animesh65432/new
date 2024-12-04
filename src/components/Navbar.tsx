@@ -94,10 +94,10 @@ const Navbar: React.FC = () => {
                 </div>
 
                 <div
-                    className="flex flex-col items-center w-[149px] h-[34px]"
+                    className={`flex flex-col items-center  h-[34px] ${TraveltipsClicked ? "w-250px" : "w-150px"}`}
                     onClick={() => onclickthebutton("TraveltipsClicked")}
                 >
-                    <div className={`flex items-center gap-2 ${TraveltipsClicked ? "font-bold text-custom-green text-[28px]" : ""}`}>
+                    <div className={`flex items-center gap-2 ${TraveltipsClicked ? "font-bold text-custom-green text-[28px] " : ""}`}>
                         <Image src={Traveltips} alt="travel tips" width={21} height={34} />
                         <span className="text-[22px]">Travel Tips</span>
                     </div>

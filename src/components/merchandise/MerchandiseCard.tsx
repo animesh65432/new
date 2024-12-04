@@ -16,7 +16,7 @@ import PrevIcon from "../../assets/prev.svg"
 import StarIcon from "../../assets/HeroSectionstar.svg"
 const Merchandise: React.FC = () => {
     return (
-        <div className="mt-[73px] flex flex-col items-center ">
+        <div className="mt-[73px] flex flex-col items-center justify-center ">
             <Carousel
                 opts={{
                     align: "start",
@@ -24,10 +24,10 @@ const Merchandise: React.FC = () => {
                 }}
                 className="w-full max-w-[1665px]"
             >
-                <CarouselContent className="ml-[35px] pl-[35px] flex gap-[35px]">
+                <CarouselContent className=" pl-[35px] flex gap-[35px]">
                     {CardOfMerchandise.map((merchandise, index) => (
-                        <CarouselItem key={index} className="pl-[35px] basis-[302px]">
-                            <Card className="w-[302px] h-[565px] rounded-none flex flex-col border-none">
+                        <CarouselItem key={index} className="justify-center basis-[302px]">
+                            <div className="w-[302px] h-[565px] rounded-none flex flex-col rounded-none border-0 ">
                                 <CardContent className="p-0 flex-grow">
                                     <Image
                                         src={merchandise.image}
@@ -36,7 +36,7 @@ const Merchandise: React.FC = () => {
                                         alt={merchandise.title}
                                         className="w-full h-[384px] object-cover"
                                     />
-                                    <div >
+                                    <div className='border-0'>
                                         <p className="font-semibold text-[24px] mt-[44px] font-sans">{merchandise.title}</p>
                                         <p className="flex items-center mt-[20px] mb-[20px]">
                                             4.5
@@ -58,7 +58,7 @@ const Merchandise: React.FC = () => {
                                         Explore Now
                                     </Button>
                                 </div>
-                            </Card>
+                            </div>
                         </CarouselItem>
                     ))}
                 </CarouselContent>

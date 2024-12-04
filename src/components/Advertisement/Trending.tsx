@@ -8,7 +8,7 @@ const Trending: React.FC = () => {
     return (
         <Card className="overflow-y-auto flex-1 h-full">
             <div>
-                <p className='text-2xl font-poppins ml-[24px] text-[28px] mt-[24px]'>Trending</p>
+                <p className='text-2xl font-poppins ml-[24px] text-[28px] mt-[24px] font-bold mb-[24px]'>Trending</p>
             </div>
             <div className='flex flex-col gap-[19px]'>
                 {CardOfTrending.map((trending, index) => (
@@ -25,7 +25,7 @@ const Trending: React.FC = () => {
                                 className='object-cover'
                             />
                         </div>
-                        <div className='flex-grow  w-[257px] '>
+                        <div className='flex-grow  w-[350px] '>
                             <p className='text-[20px]'> {trending.title}</p>
                             <p className='mt-[6px] text-[16px]'>by <span className='ml-[6px] font-semibold underline'>{trending.by}</span></p>
                             <div className='flex mt-[10px]'>

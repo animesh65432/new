@@ -28,14 +28,14 @@ const PodcastCard = () => {
                     }}
                     className="relative w-full"
                 >
-                    <CarouselContent className="flex gap-[35px] pl-[35px]">
+                    <CarouselContent className="flex gap-[35px] items-center">
                         {CardOfPodcastItems.map((podcast, index) => (
                             <CarouselItem
                                 key={index}
                                 className="flex-shrink-0 basis-[520px] overflow-hidden"
                             >
 
-                                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                                <div className="bg-white   overflow-hidden">
                                     <div className="relative">
                                         <img
                                             src={podcast.image}

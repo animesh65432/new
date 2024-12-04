@@ -1,7 +1,7 @@
+"use client"
 import React from 'react'
 import {
     Card,
-    CardContent,
     CardDescription,
     CardFooter,
     CardHeader,
@@ -10,6 +10,7 @@ import {
 import Image from 'next/image'
 import StarImage from "../../assets/HeroSectionstar.svg"
 import { Button } from "../../components/ui/button"
+import { useRouter } from "next/navigation"
 
 type Props = {
     title: string,
@@ -21,10 +22,15 @@ type Props = {
 }
 
 const CardOFTopDestinationsAndFoods: React.FC<Props> = (props) => {
+    const router = useRouter()
 
+
+    const navigatetoblog = () => {
+        router.push("/blog")
+    }
     return (
 
-        <Card className="flex mb-[28px] w-[1057px] h-[400px]  pt-[24px] pr-[30px] pb-[16px] pl-[28px] gap-[1rem]">
+        <Card className="flex mb-[28px] w-[1057px] h-[400px]  pt-[24px] pr-[30px] pb-[16px] pl-[28px] gap-[1rem]" onClick={navigatetoblog}>
             <div>
                 <Image src={props.image} alt="cardimages" width={284} height={274} />
             </div>

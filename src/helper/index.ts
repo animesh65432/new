@@ -121,9 +121,6 @@ export const CardOfMerchandise = [
     }, {
         image: "/images/merchandise/4298.png",
         title: "Comfortable T-Shirts"
-    }, {
-        image: "/images/merchandise/17341.jpg",
-        title: "Comfortable T-Shirts"
     },
     {
         image: "/images/merchandise/1544.png",

@@ -10,14 +10,14 @@ type Props = {
 
 const CuponCard: React.FC<Props> = ({ title, image }) => {
     return (
-        <div className='w-[370px] h-[500h]'>
+        <div className='w-[500px] h-[503px]'>
             <div >
                 <div>
-                    <Image src={image} width={290} height={290} alt='CuponCard' />
+                    <Image src={image} width={500} height={320} alt='CuponCard' />
                 </div>
                 <div className='bg-transparent  bg-gradient-to-b from-black/70 to-black/30 p-[1rem] flex flex-col'>
                     <div className='flex justify-between items-center gap-2'>
-                        <p className='font-oxygen text-[1.2rem] text-customwhite-color'>
+                        <p className='font-oxygen text-[1.2rem] text-customwhite-color items-center'>
                             {title}
                         </p>
                         <div

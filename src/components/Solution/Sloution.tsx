@@ -17,7 +17,7 @@ const Solution: React.FC = () => {
             >
                 <Image src="/images/sloution/Group1707484840.png" width={666} height={623} alt="Card Photo" />
             </div>
-            <div className='mt-[13rem]'>
+            <div className='mt-[2rem]'>
                 <div >
                     <p className='text-custom-blue-color-50 text-[32px] font-oxygen'>CELEBRATING EXCELENCE  AND INNOVATION</p>
                     <p className=' mt-[2rem] font-semibold text-[42px]'>NG SLOUTION : THIS WEEK'S <span className='text-custom-green'>MOST</span></p>

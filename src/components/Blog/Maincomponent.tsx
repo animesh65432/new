@@ -260,8 +260,8 @@ const Maincomponent = () => {
             <div className='mt-[59px] ml-[133px] mr-[133px]'>
                 {
                     comments.map((Comment, index) => {
-                        return <>
-                            <div className=" mx-auto border px-6 py-4 rounded-lg w-[1665px] mb-[62px]">
+                        return < >
+                            <div className=" mx-auto border px-6 py-4 rounded-lg w-[1665px] mb-[62px]" key={index}>
                                 <div className="flex items-center mb-6">
                                     <img
                                         src={Comment.photo}

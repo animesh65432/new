@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 const Afflicate: React.FC = () => {
     return (
-        <div style={{ backgroundImage: `url('/images/afflicate/Background.png')`, }} className='mt-[100px] bg-cover bg-center h-[1003px]'>
-            <div className='flex justify-center '>
+        <div style={{ backgroundImage: `url('/images/afflicate/Background.png')`, }} className='mt-[100px] bg-cover bg-center h-[1003px] '>
+            <div className='flex justify-center items-center '>
                 <p className='text-custom-green text-[2.5rem] mt-[4rem] font-semibold'>AFFILIATE  PROGRAM</p>
             </div>
-            <div className='flex'>
+            <div className='flex ml-[132px]'>
                 <div className='flex p-[6rem] w-[57rem] '>
                     <div >
                         <p className='text-custom-blue-color-50 text-[2rem]'>LEARN HOW TO GROW YOUR BUSINESS</p>
