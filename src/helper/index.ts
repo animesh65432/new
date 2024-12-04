@@ -225,3 +225,23 @@ export const BusinessEbooks = [
         title: "Best Beaches"
     }
 ]
+
+export const comments = [{
+    name: "ALex92",
+    date: " 22 Jul",
+    comment: "KaiB was amazing with our cats!! 🌟🌟🌟 This was our first time using a pet-sitting service, so we were naturally quite anxious. We took a chance on Kai and completely lucked out! We booked Kai to come twice a day for three days. Kai spent a considerable amount of time playing and engaging with our cats. She also sent us very funny and detailed reports at the end of each session. She truly gave us peace of mind while on holiday, knowing our furbabies were in good hands. We also kept looking forward to her cute updates! You can tell she’s a natural with animals. I'd definitely book her again. Highly recommended!",
+    photo: "/images/blog/avatar.png"
+
+}, {
+    name: "ALex92",
+    date: " 22 Jul",
+    comment: "KaiB was amazing with our cats!! 🌟🌟🌟 This was our first time using a pet-sitting service, so we were naturally quite anxious. We took a chance on Kai and completely lucked out! We booked Kai to come twice a day for three days. Kai spent a considerable amount of time playing and engaging with our cats. She also sent us very funny and detailed reports at the end of each session. She truly gave us peace of mind while on holiday, knowing our furbabies were in good hands. We also kept looking forward to her cute updates! You can tell she’s a natural with animals. I'd definitely book her again. Highly recommended!",
+    photo: "/images/blog/avatar.png"
+
+}, {
+    name: "ALex92",
+    date: " 22 Jul",
+    comment: "KaiB was amazing with our cats!! 🌟🌟🌟 This was our first time using a pet-sitting service, so we were naturally quite anxious. We took a chance on Kai and completely lucked out! We booked Kai to come twice a day for three days. Kai spent a considerable amount of time playing and engaging with our cats. She also sent us very funny and detailed reports at the end of each session. She truly gave us peace of mind while on holiday, knowing our furbabies were in good hands. We also kept looking forward to her cute updates! You can tell she’s a natural with animals. I'd definitely book her again. Highly recommended!",
+    photo: "/images/blog/avatar.png"
+
+}]

@@ -8,7 +8,7 @@ const Newsletter: React.FC = () => {
             backgroundImage: `url('/images/newsletter/image.png')`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-        }} className='h-[24rem] flex justify-center items-center'>
+        }} className='h-[24rem] flex justify-center items-center mt-[100px]'>
 
             <div >
                 <p className='text-customwhite-color-50  font-oxygen font-bold text-[44px]'>SIGN UP FOR OUR NEWSLETTER</p>

@@ -15,7 +15,7 @@ const CardandCoupons: React.FC = () => {
             className='h-[1009px]'
 
         >
-            <div className='pl-[130px] pr-[130px] pt-[137px] pb-[136px]'>
+            <div className='pl-[130px] pr-[130px] pt-[137px] pb-[136px] mt-[100px]'>
                 <div>
                     <div >
                         <p className='text-customwhite-color-50 text-[1.5rem] mb-[2rem]'>EXPLORE FANTASTIC  DEALS</p>

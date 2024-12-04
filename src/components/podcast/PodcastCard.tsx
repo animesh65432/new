@@ -34,44 +34,29 @@ const PodcastCard = () => {
                                 key={index}
                                 className="flex-shrink-0 basis-[520px] overflow-hidden"
                             >
-                                <div className={`w-full h-[667px] rounded-none flex flex-col`} style={{
-                                    backgroundImage: `url(${podcast.image})`,
-                                    backgroundSize: "cover",
-                                }}>
-                                    <div className={` h-full px-4 py-7 rounded-xl bg-[var(${podcast.background_color})]`} >
-                                        <CardContent >
-                                            <Image
-                                                src={podcast.image}
-                                                width={470}
-                                                height={384}
-                                                alt={podcast.title}
-                                                className="w-full h-[384px] object-cover"
-                                            />
-                                            <div className="p-4">
-                                                <h3 className="text-lg font-semibold">{podcast.title}</h3>
-                                                <p className="text-sm text-gray-600 mt-2">
-                                                    {podcast.summary}
-                                                </p>
-                                                <div className="flex items-center gap-2 mt-4">
-                                                    <span className="text-sm font-medium">
-                                                        {podcast.Episode}
-                                                    </span>
-                                                    {podcast.color && (
-                                                        <Image
-                                                            src={StarIcon}
-                                                            alt="star icon"
-                                                            width={16}
-                                                            height={16}
-                                                        />
-                                                    )}
-                                                </div>
-                                            </div>
-                                        </CardContent>
-                                        <Button className="bg-custom-green w-full rounded-none">
-                                            Explore Now
-                                        </Button>
+
+                                <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                                    <div className="relative">
+                                        <img
+                                            src={podcast.image}
+                                            alt="Travel Image"
+                                            className="w-full h-64 object-cover"
+                                        />
+                                        <div className="absolute top-0 right-0 m-4 bg-gray-800 text-white px-3 py-1 rounded-full">
+                                            01:02
+                                        </div>
+                                    </div>
+                                    <div className="p-6">
+                                        <h3 className="text-2xl font-bold mb-2">{podcast.title} • {podcast.Episode}</h3>
+                                        <p className="text-gray-600 mb-4">
+                                            {podcast.summary}
+                                        </p>
+                                        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                                            Play
+                                        </button>
                                     </div>
                                 </div>
+
                             </CarouselItem>
                         ))}
                     </CarouselContent>

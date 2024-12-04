@@ -47,8 +47,9 @@ const Merchandise: React.FC = () => {
                                                 alt="star"
                                                 className="ml-[6px]"
                                             />
-                                            <p className='font-oxygen text-[16px]'>(27,000) People like this</p>
+                                            <span className="font-oxygen text-[16px] ml-[6px]">(27,000) People like this</span>
                                         </p>
+
 
                                     </div>
                                 </CardContent>

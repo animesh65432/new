@@ -24,7 +24,7 @@ const CardOFTopDestinationsAndFoods: React.FC<Props> = (props) => {
 
     return (
 
-        <Card className="flex mb-[28px] w-[1057px] h-[350px]  pt-[24px] pr-[30px] pb-[16px] pl-[28px] gap-[1rem]">
+        <Card className="flex mb-[28px] w-[1057px] h-[400px]  pt-[24px] pr-[30px] pb-[16px] pl-[28px] gap-[1rem]">
             <div>
                 <Image src={props.image} alt="cardimages" width={284} height={274} />
             </div>

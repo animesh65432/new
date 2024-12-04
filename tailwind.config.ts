@@ -187,27 +187,33 @@ export default {
 					50: "hsla(0, 0%, 95%, 1)",
 					75: "hsla(0, 0%, 95%, 1)",
 					hover: "hsla(0, 0%, 95%, 1)"
-				}
-			},
-			borderRadius: {
-				lg: 'var(--radius)',
-				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				},
+				"custom-border-yellow-color": {
+					DEFAULT: "hsla(27,100%,58%,1)",
+					50: "hsla(27,100%,58%,1)",
+					75: "hsla(27,100%,58%,1)",
+					hover: "hsla(27, 100%, 58%, 1)"
+				},
 			}
 		},
-		fontFamily: {
-			oxygen: ['Oxygen', 'sans-serif'],
-			sans: ['var(--font-open-sans)', 'Arial', 'sans-serif'],
-			poppins: ['Poppins', 'sans-serif']
-
-		},
-		fontSize: {
-			'1.125': '1.125rem',
-			"1.5": "1.5 rem"
-		},
-		width: {
-			'58.062': '58.0625rem',
+		borderRadius: {
+			lg: 'var(--radius)',
+			md: 'calc(var(--radius) - 2px)',
+			sm: 'calc(var(--radius) - 4px)'
 		}
+	},
+	fontFamily: {
+		oxygen: ['Oxygen', 'sans-serif'],
+		sans: ['var(--font-open-sans)', 'Arial', 'sans-serif'],
+		poppins: ['Poppins', 'sans-serif']
+
+	},
+	fontSize: {
+		'1.125': '1.125rem',
+		"1.5": "1.5 rem"
+	},
+	width: {
+		'58.062': '58.0625rem',
 	},
 	plugins: [require("tailwindcss-animate")],
 } satisfies Config;
