@@ -1,5 +1,4 @@
 
-import card from "../../public/images/cardandcupons/image(1).png"
 export const ImagesOfArray = [
     {
         image: "/images/image.png",

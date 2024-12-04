@@ -7,12 +7,8 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import PrevIcon from "../../assets/prev.svg";
-import StarIcon from "../../assets/HeroSectionstar.svg";
-import shopfiyicon from "../../assets/podcast/Vector.svg"
 
 const PodcastCard = () => {
 
