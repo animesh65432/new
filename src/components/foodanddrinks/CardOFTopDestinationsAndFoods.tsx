@@ -24,33 +24,34 @@ type Props = {
 const CardOFTopDestinationsAndFoods: React.FC<Props> = (props) => {
     const router = useRouter()
 
-
     const navigatetoblog = () => {
         router.push("/blog")
     }
     return (
 
-        <Card className="flex mb-[28px] w-[1057px] h-[400px]  pt-[24px] pr-[30px] pb-[16px] pl-[28px] gap-[1rem]" onClick={navigatetoblog}>
+        <Card className="flex mb-[1.75rem] w-[100vh] h-[43vh] pt-[1.5rem] pr-[1.875rem] pb-[1rem] pl-[1.75rem] gap-[1rem]" onClick={navigatetoblog}>
             <div>
                 <Image src={props.image} alt="cardimages" width={284} height={274} />
             </div>
-            <div className='w-[665px] h-[278px]'>
+            <div className='w-[41.56rem] h-[17.38rem]'>
                 <CardHeader>
-                    <CardTitle className='text-[32px] font-semibold font-sans' >{props.title}</CardTitle>
-                    <CardDescription className="font-oxygen text-[20px] leading-[36.4px]">{props.description}</CardDescription>
+                    <CardTitle className='text-[2rem] font-semibold font-sans' >{props.title}</CardTitle>
+                    <CardDescription className="font-oxygen text-[1.25rem] leading-[2.275rem]">{props.description}</CardDescription>
                 </CardHeader>
-                <div className='flex mt-[4px] ml-[24px] '>
+                <div className='flex mt-[0.25rem] ml-[1.5rem] '>
                     <Image src={StarImage} alt='star' width={20} height={20} />
                     <Image src={StarImage} alt='star' width={20} height={20} />
                     <Image src={StarImage} alt='star' width={20} height={20} />
                     <Image src={StarImage} alt='star' width={20} height={20} />
                 </div>
 
-                <CardFooter className="text-sm text-gray-500 font-sans gap-[24px]  flex flex-col mr-[300px]">
-                    <div className='flex gap-[20px] mt-[10px]'>
-                        <span className='font-oxygen text-[20px] '>by <span className='font-sans text-[20px] font-semibold underline'>{props.by}</span>  </span>        <span className='font-sans text-[20px] font-normal leading-[30px] text-left  decoration-solid decoration-from-font decoration-skip-ink-none'> Published: {props.published}</span></div>
-                    <div className='mr-[200px] h-[46px] w-[139px] ml-[40px] '>
-                        <Button className='bg-customwhite-color rounded-none text-custom-green border-2 border-custom-green text-[16px] hover:text-customwhite-color'>Read More</Button>
+                <CardFooter className="text-sm text-gray-500 font-sans gap-[1.5rem] flex flex-col mr-[18.75rem]">
+                    <div className='flex gap-[1.25rem] mt-[0.625rem]'>
+                        <span className='font-oxygen text-[1.25rem] '>by <span className='font-sans text-[1.25rem] font-semibold underline'>{props.by}</span>  </span>
+                        <span className='font-sans text-[1.25rem] font-normal leading-[1.875rem] text-left  decoration-solid decoration-from-font decoration-skip-ink-none'> Published: {props.published}</span>
+                    </div>
+                    <div className='mr-[12.5rem] h-[2.875rem] w-[8.6875rem] ml-[2.5rem]'>
+                        <Button className='bg-customwhite-color rounded-none text-custom-green border-2 border-custom-green text-[1rem] hover:text-customwhite-color'>Read More</Button>
                     </div>
                 </CardFooter>
 

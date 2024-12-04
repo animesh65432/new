@@ -7,7 +7,7 @@ import CardArrow from "../../assets/Group1000002735.svg"
 
 const Advertisement: React.FC = () => {
     return (
-        <div className='h-[1410px] w-[569px] flex flex-col gap-[46px]'>
+        <div className='h-full w-[100%] flex flex-col gap-[10%]'>
             <div>
                 <div className="w-[569px] h-[206px] relative">
                     <Image

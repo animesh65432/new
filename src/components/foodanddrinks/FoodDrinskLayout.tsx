@@ -7,7 +7,7 @@ import Image from "next/image";
 
 const FoodDrinkLayout: React.FC = () => {
     return <>
-        <div className="mt-[100px] flex w-[1654px]   space-x-8  ml-[133px] mr-[133px] ">
+        <div className="mt-[6.25rem] flex w-[103.375rem] space-x-8 ml-[8.3125rem] mr-[8.3125rem] ">
             <div>
                 {
 

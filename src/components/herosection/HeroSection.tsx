@@ -25,7 +25,7 @@ const HeroSection: React.FC = () => {
 
     return (
         <div
-            className={`flex flex-col h-[929px] relative bg-gradient-to-b from-black/70 to-black/70 transition-opacity duration-300 ${isTransitioning ? "opacity-0" : "opacity-100"
+            className={`flex flex-col h-full relative bg-gradient-to-b from-black/70 to-black/70 transition-opacity duration-300 ${isTransitioning ? "opacity-0" : "opacity-100"
                 }`}
             style={{
                 backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('${image}')`,
