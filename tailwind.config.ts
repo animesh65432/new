@@ -175,6 +175,18 @@ export default {
 					50: "hsla(27,39%,53%,0.9)",
 					75: "hsla(27,39%,53%,0.9)",
 					hover: "hsla(27,39%,53%,0.9)"
+				},
+				"custom-pro-trip-background-color": {
+					DEFAULT: "hsla(27, 100%, 58%, 0.1)",
+					50: "hsla(27, 100%, 58%, 0.1)",
+					75: "hsla(27, 100%, 58%, 0.1)",
+					hover: "hsla(27, 100%, 58%, 0.1)"
+				},
+				"Custom-White-Color": {
+					DEFAULT: "hsla(0, 0%, 95%, 1)",
+					50: "hsla(0, 0%, 95%, 1)",
+					75: "hsla(0, 0%, 95%, 1)",
+					hover: "hsla(0, 0%, 95%, 1)"
 				}
 			},
 			borderRadius: {

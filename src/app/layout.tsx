@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Oxygen, Open_Sans, Poppins } from "next/font/google";
 import "./globals.css";
+import { Header, Footer } from "../components"
 
 const oxygen = Oxygen({
   weight: ['300', '400', '700'],
@@ -33,7 +34,9 @@ export default function RootLayout({
       <body
         className={` ${oxygen.className} ${openSans.className} ${OpenPoppins.className} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

@@ -19,10 +19,11 @@ import CuponCard from "./cardandcoupons/CuponCard";
 import Newsletter from "./Newsletter/Newsletter";
 import Product from "./Product/Product";
 import SheetSide from "./SheetSide";
+import Maincomponent from "./Blog/Maincomponent";
 export {
     Header, HeroSection, CardOFTopDestinationsAndFoods, Advertisement, Trending, Navbar, FoodDrinkLayout, Business
     , PodCast, MerchandiseCard, Mernchadisetitle, Merchandise, PodcastCard, Afflicate, Sloution,
-    Footer, CardandCoupons, CuponCard, Newsletter, Product, SheetSide
+    Footer, CardandCoupons, CuponCard, Newsletter, Product, SheetSide, Maincomponent
 }
 
 

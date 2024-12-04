@@ -53,6 +53,8 @@ body {
     --custom-blue-light-color : 208,63%,16%,1;
     --custom-light-green-col-background :168,80%,18%,0.9;
     --custom-light-yellow-background-color :27,39%,53%,0.9;
+    --custom-pro-trip-background-color :27, 100%, 58%, 0.1;
+    --Custom-White-Color :0, 0%, 100%, 1;
   
   }
   .dark {
@@ -100,6 +102,8 @@ body {
     --custom-blue-light-color : hsl(208,63%,16%,1);
     --custom-light-green-col-background :hsla(168,80%,18%,0.9);
     --custom-light-yellow-background-color :hsla(27,39%,53%,0.9);
+    --custom-pro-trip-background-color : hsla(27, 100%, 58%, 0.1);
+    --Custom-White-Color :0, 0%, 100%, 1;
   }
 }
 
